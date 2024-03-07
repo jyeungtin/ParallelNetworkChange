@@ -21,3 +21,5 @@ def hamming_distance(adj_arr):
         sum += abs(value_1-value_2)/(N*(N-1))
 
     h_distances.append(sum)
+
+  return h_distances
