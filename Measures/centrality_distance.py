@@ -28,6 +28,4 @@ def centrality_distance(G1, G2, centrality_measure = 'betweenness'):
 
     distance = np.sqrt(np.sum(diff**2))
 
-    return distance 
-
-centrality_distance(G_bali_t3, G_bali_t4, centrality_measure='katz')
+    return distance
