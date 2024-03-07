@@ -9,9 +9,9 @@ def hamming_distance(adj_arr):
   '''
   
   h_distances = []
-  for graph in range(len(adj_matrices)-1):
-    t_1 = adj_matrices[graph]
-    t_2 = adj_matrices[graph+1]
+  for graph in range(len(adj_arr)-1):
+    t_1 = adj_arr[graph]
+    t_2 = adj_arr[graph+1]
 
     N = len(t_1)
   
