@@ -1,4 +1,5 @@
 import networkx as nx
+import numpy as np
 
 def hamming_distance(G1, G2):
   '''
@@ -19,6 +20,6 @@ def hamming_distance(G1, G2):
   sum = 0
   for row_1, row_2 in zip(t_1, t_2):
       for value_1, value_2 in zip(row_1, row_2):
-          sum += abs(value_1-value_2)/(N*(N-1))
+          sum += np.linalg.norm(value_1-value_2)/(N*(N-1))
   
   return sum
