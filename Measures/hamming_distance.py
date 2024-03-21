@@ -5,7 +5,7 @@ def hamming_distance(G1, G2):
   Calculates hamming distance between two graphs
   ## Parameters
   G1: graph at time t
-  G2: graph at time t+1
+  G2: graph at time t+n
 
   ## Return 
   Hamming distance value
