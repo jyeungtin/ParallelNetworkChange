@@ -12,7 +12,6 @@ def main():
 
     for i in sorted(df['year'].unique()):
 
-        year_graph = df[(df['year']==i)]
         edges = pd.DataFrame(
             {
                 "source": list(df['location_name_1']),
@@ -32,7 +31,7 @@ def main():
         # Create a subgraph with only the specified node and its one-hop neighbors
         subgraph = G.subgraph(one_hop_neighbors)
 
-        graphs.append(G)
+        graphs.append(subgraph)
 
     return graphs
 
