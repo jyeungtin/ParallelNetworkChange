@@ -11,6 +11,7 @@ import statsmodels.api as sm
 from tqdm import tqdm
 
 ## loading in graphs from pkl objects
+## REPLACE FILE PATHS W/ YOUR LOCAL PATHS FOR THE PICKLES
 with open('/Users/teddyyankov/Documents/GitHub/ParallelNetworkChange/Data/MTT_graphs/mig_graphs.pkl', 'rb') as f:
     mig_graphs = pickle.load(f)
 
